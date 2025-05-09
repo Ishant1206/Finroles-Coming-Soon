@@ -4,47 +4,66 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Finroles – Coming Soon</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
   <style>
     body {
-      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
-      color: #fff;
-      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: #f5f5f5;
+      color: #222;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      text-align: center;
     }
-    .fade-in {
-      animation: fadeIn 2s ease-in;
+
+    h1 {
+      font-size: 3em;
+      font-weight: 700;
+      margin-bottom: 0.3em;
     }
-    @keyframes fadeIn {
-      0% { opacity: 0; transform: translateY(20px); }
-      100% { opacity: 1; transform: translateY(0); }
+
+    p {
+      font-size: 1.2em;
+      font-weight: 300;
+      color: #555;
+    }
+
+    .social-links {
+      margin-top: 2em;
+    }
+
+    .social-links a {
+      margin: 0 10px;
+      font-size: 2em;
+      color: #0077b5; /* LinkedIn default color */
+      text-decoration: none;
+    }
+
+    .social-links a.instagram {
+      color: #C13584; /* Instagram color */
+    }
+
+    @media (max-width: 600px) {
+      h1 { font-size: 2em; }
+      p { font-size: 1em; }
+      .social-links a { font-size: 1.5em; }
     }
   </style>
 </head>
-<body class="flex flex-col items-center justify-center min-h-screen px-4 text-center fade-in">
-  <div class="max-w-2xl">
-    <img src="https://finroles.com/logo.png" alt="Finroles Logo" class="mx-auto mb-6 w-32 h-32" onerror="this.style.display='none'">
-    <h1 class="text-4xl md:text-5xl font-bold mb-4">Finroles is Coming Soon</h1>
-    <p class="text-lg md:text-xl mb-6 text-gray-300">
-      We’re building the fastest recruitment platform for finance professionals. Stay tuned!
-    </p>
+<body>
+  <h1>Finroles is Coming Soon</h1>
+  <p>Your fastest recruitment platform for finance professionals</p>
 
-    <!-- Optional Email Signup -->
-    <form class="mb-6">
-      <input type="email" placeholder="Enter your email" class="p-3 rounded-l-md w-64 text-black" />
-      <button class="bg-blue-600 px-4 py-3 rounded-r-md hover:bg-blue-700 transition">Notify Me</button>
-    </form>
-
-    <!-- Social Media Icons -->
-    <div class="flex justify-center space-x-6 mt-4 text-xl">
-      <a href="#" class="hover:text-blue-400"><i class="fab fa-twitter"></i></a>
-      <a href="#" class="hover:text-blue-600"><i class="fab fa-linkedin"></i></a>
-      <a href="#" class="hover:text-pink-400"><i class="fab fa-instagram"></i></a>
-    </div>
+  <div class="social-links">
+    <a href="https://www.linkedin.com/company/finroles/" target="_blank" title="Follow us on LinkedIn">
+      🔗
+    </a>
+    <a href="https://www.instagram.com/finroles?igsh=bXN2em9mMGozczho&utm_source=qr" target="_blank" class="instagram" title="Follow us on Instagram">
+      📷
+    </a>
   </div>
-
-  <footer class="absolute bottom-4 text-gray-400 text-sm">
-    &copy; 2025 Finroles. All rights reserved.
-  </footer>
 </body>
 </html>
